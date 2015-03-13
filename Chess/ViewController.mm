@@ -6,7 +6,8 @@
 //  Copyright (c) 2015 Logan Smith. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "ViewController.hh"
+#import "GameWrapper.hh"
 
 @interface ViewController ()
 
@@ -17,6 +18,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    GameWrapper* g = [[GameWrapper alloc] init];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

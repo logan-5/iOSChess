@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 Logan Smith. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "AppDelegate.hh"
 
-#import "ViewController.h"
+#import "ViewController.hh"
 
 @implementation AppDelegate
 

@@ -7,22 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		968567F11AB2B99D00656AF7 /* Rook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 968567EF1AB2B99D00656AF7 /* Rook.mm */; };
+		968567F41AB2C0A600656AF7 /* Bishop.mm in Sources */ = {isa = PBXBuildFile; fileRef = 968567F21AB2C0A600656AF7 /* Bishop.mm */; };
 		96887BBD1AB28DA500DBD817 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96887BBC1AB28DA500DBD817 /* UIKit.framework */; };
 		96887BBF1AB28DA500DBD817 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96887BBE1AB28DA500DBD817 /* Foundation.framework */; };
 		96887BC11AB28DA500DBD817 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96887BC01AB28DA500DBD817 /* CoreGraphics.framework */; };
 		96887BC71AB28DA500DBD817 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96887BC51AB28DA500DBD817 /* InfoPlist.strings */; };
 		96887BC91AB28DA500DBD817 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96887BC81AB28DA500DBD817 /* main.m */; };
-		96887BCD1AB28DA500DBD817 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96887BCC1AB28DA500DBD817 /* AppDelegate.m */; };
+		96887BCD1AB28DA500DBD817 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96887BCC1AB28DA500DBD817 /* AppDelegate.mm */; };
 		96887BCF1AB28DA500DBD817 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 96887BCE1AB28DA500DBD817 /* Default.png */; };
 		96887BD11AB28DA500DBD817 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96887BD01AB28DA500DBD817 /* Default@2x.png */; };
 		96887BD31AB28DA500DBD817 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96887BD21AB28DA500DBD817 /* Default-568h@2x.png */; };
-		96887BD61AB28DA500DBD817 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96887BD51AB28DA500DBD817 /* ViewController.m */; };
+		96887BD61AB28DA500DBD817 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96887BD51AB28DA500DBD817 /* ViewController.mm */; };
 		96887BD91AB28DA500DBD817 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96887BD71AB28DA500DBD817 /* ViewController.xib */; };
 		96887BE11AB28DA500DBD817 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96887BE01AB28DA500DBD817 /* SenTestingKit.framework */; };
 		96887BE21AB28DA500DBD817 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96887BBC1AB28DA500DBD817 /* UIKit.framework */; };
 		96887BE31AB28DA500DBD817 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96887BBE1AB28DA500DBD817 /* Foundation.framework */; };
 		96887BEB1AB28DA500DBD817 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96887BE91AB28DA500DBD817 /* InfoPlist.strings */; };
 		96887BEE1AB28DA500DBD817 /* ChessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96887BED1AB28DA500DBD817 /* ChessTests.m */; };
+		96887BF91AB28E9E00DBD817 /* Game.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96887BF81AB28E9E00DBD817 /* Game.mm */; };
+		96887BFC1AB2905700DBD817 /* GameWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96887BFB1AB2905700DBD817 /* GameWrapper.mm */; };
+		96887BFF1AB2924F00DBD817 /* Square.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96887BFE1AB2924F00DBD817 /* Square.mm */; };
+		96887C021AB2933900DBD817 /* Piece.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96887C001AB2933900DBD817 /* Piece.mm */; };
+		968C6C7C1AB2A9870071C923 /* Board.mm in Sources */ = {isa = PBXBuildFile; fileRef = 968C6C7A1AB2A9870071C923 /* Board.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		968567EF1AB2B99D00656AF7 /* Rook.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Rook.mm; sourceTree = "<group>"; };
+		968567F01AB2B99D00656AF7 /* Rook.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Rook.hh; sourceTree = "<group>"; };
+		968567F21AB2C0A600656AF7 /* Bishop.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Bishop.mm; sourceTree = "<group>"; };
+		968567F31AB2C0A600656AF7 /* Bishop.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Bishop.hh; sourceTree = "<group>"; };
 		96887BB91AB28DA500DBD817 /* Chess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96887BBC1AB28DA500DBD817 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		96887BBE1AB28DA500DBD817 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -44,13 +55,13 @@
 		96887BC61AB28DA500DBD817 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		96887BC81AB28DA500DBD817 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		96887BCA1AB28DA500DBD817 /* Chess-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Chess-Prefix.pch"; sourceTree = "<group>"; };
-		96887BCB1AB28DA500DBD817 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		96887BCC1AB28DA500DBD817 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		96887BCB1AB28DA500DBD817 /* AppDelegate.hh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AppDelegate.hh; sourceTree = "<group>"; };
+		96887BCC1AB28DA500DBD817 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		96887BCE1AB28DA500DBD817 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		96887BD01AB28DA500DBD817 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		96887BD21AB28DA500DBD817 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		96887BD41AB28DA500DBD817 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		96887BD51AB28DA500DBD817 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		96887BD41AB28DA500DBD817 /* ViewController.hh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ViewController.hh; sourceTree = "<group>"; };
+		96887BD51AB28DA500DBD817 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		96887BD81AB28DA500DBD817 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		96887BDF1AB28DA500DBD817 /* ChessTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChessTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96887BE01AB28DA500DBD817 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -58,6 +69,16 @@
 		96887BEA1AB28DA500DBD817 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		96887BEC1AB28DA500DBD817 /* ChessTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChessTests.h; sourceTree = "<group>"; };
 		96887BED1AB28DA500DBD817 /* ChessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChessTests.m; sourceTree = "<group>"; };
+		96887BF71AB28E9E00DBD817 /* Game.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Game.hh; sourceTree = "<group>"; };
+		96887BF81AB28E9E00DBD817 /* Game.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Game.mm; sourceTree = "<group>"; };
+		96887BFA1AB2905700DBD817 /* GameWrapper.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameWrapper.hh; sourceTree = "<group>"; };
+		96887BFB1AB2905700DBD817 /* GameWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameWrapper.mm; sourceTree = "<group>"; };
+		96887BFD1AB2924E00DBD817 /* Square.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Square.hh; sourceTree = "<group>"; };
+		96887BFE1AB2924F00DBD817 /* Square.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = Square.mm; sourceTree = "<group>"; };
+		96887C001AB2933900DBD817 /* Piece.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Piece.mm; sourceTree = "<group>"; };
+		96887C011AB2933900DBD817 /* Piece.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Piece.hh; sourceTree = "<group>"; };
+		968C6C7A1AB2A9870071C923 /* Board.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Board.mm; sourceTree = "<group>"; };
+		968C6C7B1AB2A9870071C923 /* Board.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Board.hh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,11 +138,25 @@
 		96887BC21AB28DA500DBD817 /* Chess */ = {
 			isa = PBXGroup;
 			children = (
-				96887BCB1AB28DA500DBD817 /* AppDelegate.h */,
-				96887BCC1AB28DA500DBD817 /* AppDelegate.m */,
-				96887BD41AB28DA500DBD817 /* ViewController.h */,
-				96887BD51AB28DA500DBD817 /* ViewController.m */,
+				96887BCB1AB28DA500DBD817 /* AppDelegate.hh */,
+				96887BCC1AB28DA500DBD817 /* AppDelegate.mm */,
+				96887BD41AB28DA500DBD817 /* ViewController.hh */,
+				96887BD51AB28DA500DBD817 /* ViewController.mm */,
 				96887BD71AB28DA500DBD817 /* ViewController.xib */,
+				96887BFA1AB2905700DBD817 /* GameWrapper.hh */,
+				96887BFB1AB2905700DBD817 /* GameWrapper.mm */,
+				96887BF71AB28E9E00DBD817 /* Game.hh */,
+				96887BF81AB28E9E00DBD817 /* Game.mm */,
+				96887BFD1AB2924E00DBD817 /* Square.hh */,
+				96887BFE1AB2924F00DBD817 /* Square.mm */,
+				968C6C7B1AB2A9870071C923 /* Board.hh */,
+				968C6C7A1AB2A9870071C923 /* Board.mm */,
+				96887C011AB2933900DBD817 /* Piece.hh */,
+				96887C001AB2933900DBD817 /* Piece.mm */,
+				968567F01AB2B99D00656AF7 /* Rook.hh */,
+				968567EF1AB2B99D00656AF7 /* Rook.mm */,
+				968567F31AB2C0A600656AF7 /* Bishop.hh */,
+				968567F21AB2C0A600656AF7 /* Bishop.mm */,
 				96887BC31AB28DA500DBD817 /* Supporting Files */,
 			);
 			path = Chess;
@@ -271,8 +306,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				96887BC91AB28DA500DBD817 /* main.m in Sources */,
-				96887BCD1AB28DA500DBD817 /* AppDelegate.m in Sources */,
-				96887BD61AB28DA500DBD817 /* ViewController.m in Sources */,
+				96887BCD1AB28DA500DBD817 /* AppDelegate.mm in Sources */,
+				96887BD61AB28DA500DBD817 /* ViewController.mm in Sources */,
+				96887BF91AB28E9E00DBD817 /* Game.mm in Sources */,
+				96887BFC1AB2905700DBD817 /* GameWrapper.mm in Sources */,
+				96887BFF1AB2924F00DBD817 /* Square.mm in Sources */,
+				96887C021AB2933900DBD817 /* Piece.mm in Sources */,
+				968C6C7C1AB2A9870071C923 /* Board.mm in Sources */,
+				968567F11AB2B99D00656AF7 /* Rook.mm in Sources */,
+				968567F41AB2C0A600656AF7 /* Bishop.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +495,7 @@
 				96887BF31AB28DA600DBD817 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		96887BF41AB28DA600DBD817 /* Build configuration list for PBXNativeTarget "ChessTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +504,7 @@
 				96887BF61AB28DA600DBD817 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
