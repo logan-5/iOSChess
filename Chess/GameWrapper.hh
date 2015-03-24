@@ -9,8 +9,14 @@
 #import <Foundation/Foundation.h>
 #import "Game.hh"
 
+
+/*
+ 
+ This file may be unnecessary.
+ 
+ */
 @interface GameWrapper : NSObject {
-    Game game;
+    //Game game;
 }
 
 @end

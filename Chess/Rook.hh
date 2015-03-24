@@ -9,19 +9,16 @@
 #pragma once
 #ifndef __Chess__Rook__
 #define __Chess__Rook__
-#include "Piece.hh"
-#include <vector>
+#include "MoveSensitivePiece.hh"
 
-class Rook : public Piece {
+class Rook : public MoveSensitivePiece {
 public:
-    Rook( Board* board, color_e color, Square* currentSquare ) : Piece( board, color, currentSquare ), _hasMoved( false ) {}
+    Rook( Board* board, color_e color, Square* currentSquare ) : MoveSensitivePiece( board, color, currentSquare, color == color_e::BLACK ? "blackrook.png" : "whiterook.png" ) {}
     ~Rook() {}
-    bool hasMoved() { return _hasMoved; }
-    std::vector<Square*> getMoveOptions() const;
-    bool moveToSquareIfPossible( Square& s );
+    squarelist_t getMoveOptions( bool testMove = false ) const;
+    void forceMoveTo( Square& s );
     
 private:
-    bool _hasMoved; // keep track of whether this rook has moved, for castles
 };
 
 #endif /* defined(__Chess__Rook__) */

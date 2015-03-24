@@ -13,12 +13,13 @@ bool Square::occupyWith( Piece &p ) {
         return false;
     } else {
         _occupier = &p;
+        _occupied = true;
         return true;
     }
 }
 
 void Square::deoccupy() {
-    if( _occupier == nullptr ) {
+    if( !_occupied ) {
         return;
     } else {
         _occupied = false;

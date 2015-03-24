@@ -9,31 +9,43 @@
 #include "Bishop.hh"
 #include <vector>
 
-std::vector<Square*> Bishop::getMoveOptions() const {
-    std::vector<Square*> options;
+Piece::squarelist_t Bishop::getMoveOptions( bool testMove ) const {
+    squarelist_t options;
     
     // up left
-    int x = _currentSquare->x(), y = _currentSquare->y();
-    while( y >= 0 && !( *_board )( x, y ).isOccupied() ) {
-        options.push_back( &( *_board )( x--, y-- ) );
+    int x = _currentSquare->x() - 1, y = _currentSquare->y() - 1;
+    while( inBounds( x, _board->sizeX() ) && inBounds( y, _board->sizeY() ) && !isSameColorAs( ( *_board )( x, y )->occupier() ) ) {
+        Square* s = ( ( *_board )( x--, y-- ) );
+        options.push_back( s );
+        addToCaptureTargets( *s, testMove );
+        if( s->isOccupied() ) { break; }
     }
     
     // up right
-    x = _currentSquare->x(), y = _currentSquare->y();
-    while( y < _board->sizeY() && !( *_board )( x, y ).isOccupied() ) {
-        options.push_back( &( *_board )( x++, y-- ) );
+    x = _currentSquare->x() + 1, y = _currentSquare->y() - 1;
+    while( inBounds( x, _board->sizeX() ) && inBounds( y, _board->sizeY() ) && !isSameColorAs( ( *_board )( x, y )->occupier() ) ) {
+        Square* s = ( ( *_board )( x++, y-- ) );
+        options.push_back( s );
+        addToCaptureTargets( *s, testMove );
+        if( s->isOccupied() ) { break; }
     }
     
     // down left
-    x = _currentSquare->x(), y = _currentSquare->y();
-    while( x >= 0 && !( *_board )( x, y ).isOccupied() ) {
-        options.push_back( &( *_board )( x--, y++ ) );
+    x = _currentSquare->x() - 1, y = _currentSquare->y() + 1;
+    while( inBounds( x, _board->sizeX() ) && inBounds( y, _board->sizeY() ) && !isSameColorAs( ( *_board )( x, y )->occupier() ) ) {
+        Square* s = ( ( *_board )( x--, y++ ) );
+        options.push_back( s );
+        addToCaptureTargets( *s, testMove );
+        if( s->isOccupied() ) { break; }
     }
     
     // down right
-    x = _currentSquare->x(), y = _currentSquare->y();
-    while( x < _board->sizeX() && !( *_board )( x, y ).isOccupied() ) {
-        options.push_back( &( *_board )( x++, y++ ) );
+    x = _currentSquare->x() + 1, y = _currentSquare->y() + 1;
+    while( inBounds( x, _board->sizeX() ) && inBounds( y, _board->sizeY() ) && !isSameColorAs( ( *_board )( x, y )->occupier() ) ) {
+        Square* s = ( ( *_board )( x++, y++ ) );
+        options.push_back( s );
+        addToCaptureTargets( *s, testMove );
+        if( s->isOccupied() ) { break; }
     }
     
     return options;

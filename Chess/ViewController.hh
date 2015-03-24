@@ -10,4 +10,7 @@
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UILabel* turnLabel;
+- (IBAction)receiveTap:(id)sender;
+- (void)eventAtLocationX:(int)x Y:(int)y;
 @end

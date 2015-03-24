@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 Logan Smith. All rights reserved.
 //
 
+#pragma once
 #ifndef __Chess__Bishop__
 #define __Chess__Bishop__
 
@@ -13,10 +14,9 @@
 
 class Bishop : public Piece {
 public:
-    Bishop( Board* board, color_e color, Square* currentSquare ) : Piece( board, color, currentSquare ) {}
+    Bishop( Board* board, color_e color, Square* currentSquare ) : Piece( board, color, currentSquare, color == color_e::BLACK ? "blackbishop.png" : "whitebishop.png" ) {}
     ~Bishop() {}
-    std::vector<Square*> getMoveOptions() const;
-    bool moveToSquareIfPossible( Square& s );
+    squarelist_t getMoveOptions( bool testMove = false ) const;
     
 private:
 };

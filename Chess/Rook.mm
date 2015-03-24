@@ -7,41 +7,52 @@
 //
 
 #include "Rook.hh"
+#include "Square.hh"
 
-bool Rook::moveToSquareIfPossible( Square &s ) {
-    bool success = Piece::moveToSquareIfPossible( s );
-    if( success ) {
-        _hasMoved = true;
-    }
-    return success;
-}
-
-std::vector<Square*> Rook::getMoveOptions() const {
-    std::vector<Square*> options;
+Piece::squarelist_t Rook::getMoveOptions( bool testMove ) const {
+    squarelist_t options;
     
     // vertical up
-    int y = _currentSquare->y();
-    while( y >= 0 && !( *_board )( _currentSquare->x(), y ).isOccupied() ) {
-        options.push_back( &( *_board )( _currentSquare->x(), y-- ) );
+    int y = _currentSquare->y() - 1;
+    while( inBounds( y, _board->sizeY() ) && !isSameColorAs( ( *_board )( _currentSquare->x(), y )->occupier() ) ) {
+        Square* s = ( *_board )( _currentSquare->x(), y-- );
+        options.push_back( s );
+        addToCaptureTargets( *s, testMove );
+        if( s->isOccupied() ) { break; } // if we added this piece because there was an enemy piece in the square, stop here so we can't move 'past' the enemy piece
     }
     
     // vertical down
-    y = _currentSquare->y();
-    while( y < _board->sizeY() && !( *_board )( _currentSquare->x(), y ).isOccupied() ) {
-        options.push_back( &( *_board )( _currentSquare->x(), y++ ) );
+    y = _currentSquare->y() + 1;
+    while( inBounds( y, _board->sizeY() ) && !isSameColorAs( ( *_board )( _currentSquare->x(), y )->occupier() ) ) {
+        Square* s = ( *_board )( _currentSquare->x(), y++ );
+        options.push_back( s );
+        addToCaptureTargets( *s, testMove );
+        if( s->isOccupied() ) { break; }
     }
     
     // horizontal left
-    int x = _currentSquare->x();
-    while( x >= 0 && !( *_board )( x, _currentSquare->y() ).isOccupied() ) {
-        options.push_back( &( *_board )( x--, _currentSquare->y() ) );
+    int x = _currentSquare->x() - 1;
+    while( inBounds( x, _board->sizeX() ) && !isSameColorAs( ( *_board )( x, _currentSquare->y() )->occupier() ) ) {
+        Square* s = ( *_board )( x--, _currentSquare->y() );
+        options.push_back( s );
+        addToCaptureTargets( *s, testMove );
+        if( s->isOccupied() ) { break; }
     }
     
     // horizontal right
-    x = _currentSquare->x();
-    while( x < _board->sizeX() && !( *_board )( x, _currentSquare->y() ).isOccupied() ) {
-        options.push_back( &( *_board )( x++, _currentSquare->y() ) );
+    x = _currentSquare->x() + 1;
+    while( inBounds( x, _board->sizeX() )  && !isSameColorAs( ( *_board )( x, _currentSquare->y() )->occupier() ) ) {
+        Square* s = ( *_board )( x++, _currentSquare->y() );
+        options.push_back( s );
+        addToCaptureTargets( *s, testMove );
+        if( s->isOccupied() ) { break; }
     }
     
     return options;
+}
+
+void Rook::forceMoveTo( Square &s ) {
+    _currentSquare->deoccupy();
+    _currentSquare = &s;
+    s.occupyWith( *this ); // kyle reference
 }

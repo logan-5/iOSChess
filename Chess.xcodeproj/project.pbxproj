@@ -7,8 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9684302D1AB38CC500542F2B /* Queen.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9684302B1AB38CC500542F2B /* Queen.mm */; };
 		968567F11AB2B99D00656AF7 /* Rook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 968567EF1AB2B99D00656AF7 /* Rook.mm */; };
 		968567F41AB2C0A600656AF7 /* Bishop.mm in Sources */ = {isa = PBXBuildFile; fileRef = 968567F21AB2C0A600656AF7 /* Bishop.mm */; };
+		9686C14B1AB6114C00B9B5DD /* blackbishop.png in Resources */ = {isa = PBXBuildFile; fileRef = 9686C13D1AB6114C00B9B5DD /* blackbishop.png */; };
+		9686C14C1AB6114C00B9B5DD /* blackking.png in Resources */ = {isa = PBXBuildFile; fileRef = 9686C13E1AB6114C00B9B5DD /* blackking.png */; };
+		9686C14D1AB6114C00B9B5DD /* blackknight.png in Resources */ = {isa = PBXBuildFile; fileRef = 9686C13F1AB6114C00B9B5DD /* blackknight.png */; };
+		9686C14E1AB6114C00B9B5DD /* blackpawn.png in Resources */ = {isa = PBXBuildFile; fileRef = 9686C1401AB6114C00B9B5DD /* blackpawn.png */; };
+		9686C14F1AB6114C00B9B5DD /* blackqueen.png in Resources */ = {isa = PBXBuildFile; fileRef = 9686C1411AB6114C00B9B5DD /* blackqueen.png */; };
+		9686C1501AB6114C00B9B5DD /* blackrook.png in Resources */ = {isa = PBXBuildFile; fileRef = 9686C1421AB6114C00B9B5DD /* blackrook.png */; };
+		9686C1511AB6114C00B9B5DD /* blacksquare.png in Resources */ = {isa = PBXBuildFile; fileRef = 9686C1431AB6114C00B9B5DD /* blacksquare.png */; };
+		9686C1521AB6114C00B9B5DD /* whitebishop.png in Resources */ = {isa = PBXBuildFile; fileRef = 9686C1441AB6114C00B9B5DD /* whitebishop.png */; };
+		9686C1531AB6114C00B9B5DD /* whiteking.png in Resources */ = {isa = PBXBuildFile; fileRef = 9686C1451AB6114C00B9B5DD /* whiteking.png */; };
+		9686C1541AB6114C00B9B5DD /* whiteknight.png in Resources */ = {isa = PBXBuildFile; fileRef = 9686C1461AB6114C00B9B5DD /* whiteknight.png */; };
+		9686C1551AB6114C00B9B5DD /* whitepawn.png in Resources */ = {isa = PBXBuildFile; fileRef = 9686C1471AB6114C00B9B5DD /* whitepawn.png */; };
+		9686C1561AB6114C00B9B5DD /* whitequeen.png in Resources */ = {isa = PBXBuildFile; fileRef = 9686C1481AB6114C00B9B5DD /* whitequeen.png */; };
+		9686C1571AB6114C00B9B5DD /* whiterook.png in Resources */ = {isa = PBXBuildFile; fileRef = 9686C1491AB6114C00B9B5DD /* whiterook.png */; };
+		9686C1581AB6114C00B9B5DD /* whitesquare.png in Resources */ = {isa = PBXBuildFile; fileRef = 9686C14A1AB6114C00B9B5DD /* whitesquare.png */; };
+		9686F54B1AB3E37F00467730 /* King.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9686F5491AB3E37F00467730 /* King.mm */; };
+		9686F5501AB3E7C100467730 /* Pawn.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9686F54E1AB3E7C100467730 /* Pawn.mm */; };
 		96887BBD1AB28DA500DBD817 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96887BBC1AB28DA500DBD817 /* UIKit.framework */; };
 		96887BBF1AB28DA500DBD817 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96887BBE1AB28DA500DBD817 /* Foundation.framework */; };
 		96887BC11AB28DA500DBD817 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96887BC01AB28DA500DBD817 /* CoreGraphics.framework */; };
@@ -29,7 +46,12 @@
 		96887BFC1AB2905700DBD817 /* GameWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96887BFB1AB2905700DBD817 /* GameWrapper.mm */; };
 		96887BFF1AB2924F00DBD817 /* Square.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96887BFE1AB2924F00DBD817 /* Square.mm */; };
 		96887C021AB2933900DBD817 /* Piece.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96887C001AB2933900DBD817 /* Piece.mm */; };
+		96889AE61AB7C0D500455C41 /* DrawableImageView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96889AE51AB7C0D500455C41 /* DrawableImageView.mm */; };
+		968BAEDA1ABE04740019282B /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 968BAED91ABE04740019282B /* TODO */; };
 		968C6C7C1AB2A9870071C923 /* Board.mm in Sources */ = {isa = PBXBuildFile; fileRef = 968C6C7A1AB2A9870071C923 /* Board.mm */; };
+		969BDF5A1ABA8A0D0021C6BC /* UIImage+UIImageTint.mm in Sources */ = {isa = PBXBuildFile; fileRef = 969BDF591ABA8A0D0021C6BC /* UIImage+UIImageTint.mm */; };
+		969EAA971AB4BC8700740286 /* MoveSensitivePiece.mm in Sources */ = {isa = PBXBuildFile; fileRef = 969EAA961AB4BC8700740286 /* MoveSensitivePiece.mm */; };
+		96BC4E501AB3ACB90082C581 /* Knight.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96BC4E4E1AB3ACB90082C581 /* Knight.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,10 +65,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9684302B1AB38CC500542F2B /* Queen.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Queen.mm; sourceTree = "<group>"; };
+		9684302C1AB38CC500542F2B /* Queen.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Queen.hh; sourceTree = "<group>"; };
+		9684A7D51AB4F0ED00491FA1 /* Drawable.hh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Drawable.hh; sourceTree = "<group>"; };
 		968567EF1AB2B99D00656AF7 /* Rook.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Rook.mm; sourceTree = "<group>"; };
 		968567F01AB2B99D00656AF7 /* Rook.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Rook.hh; sourceTree = "<group>"; };
 		968567F21AB2C0A600656AF7 /* Bishop.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Bishop.mm; sourceTree = "<group>"; };
 		968567F31AB2C0A600656AF7 /* Bishop.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Bishop.hh; sourceTree = "<group>"; };
+		9686C13D1AB6114C00B9B5DD /* blackbishop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackbishop.png; sourceTree = "<group>"; };
+		9686C13E1AB6114C00B9B5DD /* blackking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackking.png; sourceTree = "<group>"; };
+		9686C13F1AB6114C00B9B5DD /* blackknight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackknight.png; sourceTree = "<group>"; };
+		9686C1401AB6114C00B9B5DD /* blackpawn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackpawn.png; sourceTree = "<group>"; };
+		9686C1411AB6114C00B9B5DD /* blackqueen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackqueen.png; sourceTree = "<group>"; };
+		9686C1421AB6114C00B9B5DD /* blackrook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackrook.png; sourceTree = "<group>"; };
+		9686C1431AB6114C00B9B5DD /* blacksquare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blacksquare.png; sourceTree = "<group>"; };
+		9686C1441AB6114C00B9B5DD /* whitebishop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whitebishop.png; sourceTree = "<group>"; };
+		9686C1451AB6114C00B9B5DD /* whiteking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteking.png; sourceTree = "<group>"; };
+		9686C1461AB6114C00B9B5DD /* whiteknight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteknight.png; sourceTree = "<group>"; };
+		9686C1471AB6114C00B9B5DD /* whitepawn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whitepawn.png; sourceTree = "<group>"; };
+		9686C1481AB6114C00B9B5DD /* whitequeen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whitequeen.png; sourceTree = "<group>"; };
+		9686C1491AB6114C00B9B5DD /* whiterook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiterook.png; sourceTree = "<group>"; };
+		9686C14A1AB6114C00B9B5DD /* whitesquare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whitesquare.png; sourceTree = "<group>"; };
+		9686F5491AB3E37F00467730 /* King.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = King.mm; sourceTree = "<group>"; };
+		9686F54A1AB3E37F00467730 /* King.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = King.hh; sourceTree = "<group>"; };
+		9686F54D1AB3E6B100467730 /* MoveSensitivePiece.hh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MoveSensitivePiece.hh; sourceTree = "<group>"; };
+		9686F54E1AB3E7C100467730 /* Pawn.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Pawn.mm; sourceTree = "<group>"; };
+		9686F54F1AB3E7C100467730 /* Pawn.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Pawn.hh; sourceTree = "<group>"; };
 		96887BB91AB28DA500DBD817 /* Chess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96887BBC1AB28DA500DBD817 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		96887BBE1AB28DA500DBD817 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -77,8 +121,16 @@
 		96887BFE1AB2924F00DBD817 /* Square.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = Square.mm; sourceTree = "<group>"; };
 		96887C001AB2933900DBD817 /* Piece.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Piece.mm; sourceTree = "<group>"; };
 		96887C011AB2933900DBD817 /* Piece.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Piece.hh; sourceTree = "<group>"; };
+		96889AE41AB7C0D500455C41 /* DrawableImageView.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DrawableImageView.hh; sourceTree = "<group>"; };
+		96889AE51AB7C0D500455C41 /* DrawableImageView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DrawableImageView.mm; sourceTree = "<group>"; };
+		968BAED91ABE04740019282B /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
 		968C6C7A1AB2A9870071C923 /* Board.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Board.mm; sourceTree = "<group>"; };
 		968C6C7B1AB2A9870071C923 /* Board.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Board.hh; sourceTree = "<group>"; };
+		969BDF581ABA8A0D0021C6BC /* UIImage+UIImageTint.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "UIImage+UIImageTint.hh"; sourceTree = "<group>"; };
+		969BDF591ABA8A0D0021C6BC /* UIImage+UIImageTint.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+UIImageTint.mm"; sourceTree = "<group>"; };
+		969EAA961AB4BC8700740286 /* MoveSensitivePiece.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MoveSensitivePiece.mm; sourceTree = "<group>"; };
+		96BC4E4E1AB3ACB90082C581 /* Knight.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Knight.mm; sourceTree = "<group>"; };
+		96BC4E4F1AB3ACB90082C581 /* Knight.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Knight.hh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +157,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9686C13C1AB6108600B9B5DD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9686C13D1AB6114C00B9B5DD /* blackbishop.png */,
+				9686C13E1AB6114C00B9B5DD /* blackking.png */,
+				9686C13F1AB6114C00B9B5DD /* blackknight.png */,
+				9686C1401AB6114C00B9B5DD /* blackpawn.png */,
+				9686C1411AB6114C00B9B5DD /* blackqueen.png */,
+				9686C1421AB6114C00B9B5DD /* blackrook.png */,
+				9686C1431AB6114C00B9B5DD /* blacksquare.png */,
+				9686C1441AB6114C00B9B5DD /* whitebishop.png */,
+				9686C1451AB6114C00B9B5DD /* whiteking.png */,
+				9686C1461AB6114C00B9B5DD /* whiteknight.png */,
+				9686C1471AB6114C00B9B5DD /* whitepawn.png */,
+				9686C1481AB6114C00B9B5DD /* whitequeen.png */,
+				9686C1491AB6114C00B9B5DD /* whiterook.png */,
+				9686C14A1AB6114C00B9B5DD /* whitesquare.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		9686F54C1AB3E38C00467730 /* Pieces */ = {
+			isa = PBXGroup;
+			children = (
+				968567F01AB2B99D00656AF7 /* Rook.hh */,
+				968567EF1AB2B99D00656AF7 /* Rook.mm */,
+				968567F31AB2C0A600656AF7 /* Bishop.hh */,
+				968567F21AB2C0A600656AF7 /* Bishop.mm */,
+				9684302C1AB38CC500542F2B /* Queen.hh */,
+				9684302B1AB38CC500542F2B /* Queen.mm */,
+				96BC4E4F1AB3ACB90082C581 /* Knight.hh */,
+				96BC4E4E1AB3ACB90082C581 /* Knight.mm */,
+				9686F54A1AB3E37F00467730 /* King.hh */,
+				9686F5491AB3E37F00467730 /* King.mm */,
+				9686F54F1AB3E7C100467730 /* Pawn.hh */,
+				9686F54E1AB3E7C100467730 /* Pawn.mm */,
+			);
+			name = Pieces;
+			sourceTree = "<group>";
+		};
 		96887BB01AB28DA400DBD817 = {
 			isa = PBXGroup;
 			children = (
@@ -143,8 +235,13 @@
 				96887BD41AB28DA500DBD817 /* ViewController.hh */,
 				96887BD51AB28DA500DBD817 /* ViewController.mm */,
 				96887BD71AB28DA500DBD817 /* ViewController.xib */,
+				969BDF581ABA8A0D0021C6BC /* UIImage+UIImageTint.hh */,
+				969BDF591ABA8A0D0021C6BC /* UIImage+UIImageTint.mm */,
+				96889AE41AB7C0D500455C41 /* DrawableImageView.hh */,
+				96889AE51AB7C0D500455C41 /* DrawableImageView.mm */,
 				96887BFA1AB2905700DBD817 /* GameWrapper.hh */,
 				96887BFB1AB2905700DBD817 /* GameWrapper.mm */,
+				9684A7D51AB4F0ED00491FA1 /* Drawable.hh */,
 				96887BF71AB28E9E00DBD817 /* Game.hh */,
 				96887BF81AB28E9E00DBD817 /* Game.mm */,
 				96887BFD1AB2924E00DBD817 /* Square.hh */,
@@ -153,10 +250,9 @@
 				968C6C7A1AB2A9870071C923 /* Board.mm */,
 				96887C011AB2933900DBD817 /* Piece.hh */,
 				96887C001AB2933900DBD817 /* Piece.mm */,
-				968567F01AB2B99D00656AF7 /* Rook.hh */,
-				968567EF1AB2B99D00656AF7 /* Rook.mm */,
-				968567F31AB2C0A600656AF7 /* Bishop.hh */,
-				968567F21AB2C0A600656AF7 /* Bishop.mm */,
+				9686F54D1AB3E6B100467730 /* MoveSensitivePiece.hh */,
+				969EAA961AB4BC8700740286 /* MoveSensitivePiece.mm */,
+				9686F54C1AB3E38C00467730 /* Pieces */,
 				96887BC31AB28DA500DBD817 /* Supporting Files */,
 			);
 			path = Chess;
@@ -165,6 +261,7 @@
 		96887BC31AB28DA500DBD817 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9686C13C1AB6108600B9B5DD /* Images */,
 				96887BC41AB28DA500DBD817 /* Chess-Info.plist */,
 				96887BC51AB28DA500DBD817 /* InfoPlist.strings */,
 				96887BC81AB28DA500DBD817 /* main.m */,
@@ -172,6 +269,7 @@
 				96887BCE1AB28DA500DBD817 /* Default.png */,
 				96887BD01AB28DA500DBD817 /* Default@2x.png */,
 				96887BD21AB28DA500DBD817 /* Default-568h@2x.png */,
+				968BAED91ABE04740019282B /* TODO */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -271,6 +369,21 @@
 				96887BD11AB28DA500DBD817 /* Default@2x.png in Resources */,
 				96887BD31AB28DA500DBD817 /* Default-568h@2x.png in Resources */,
 				96887BD91AB28DA500DBD817 /* ViewController.xib in Resources */,
+				9686C14B1AB6114C00B9B5DD /* blackbishop.png in Resources */,
+				9686C14C1AB6114C00B9B5DD /* blackking.png in Resources */,
+				9686C14D1AB6114C00B9B5DD /* blackknight.png in Resources */,
+				9686C14E1AB6114C00B9B5DD /* blackpawn.png in Resources */,
+				9686C14F1AB6114C00B9B5DD /* blackqueen.png in Resources */,
+				9686C1501AB6114C00B9B5DD /* blackrook.png in Resources */,
+				9686C1511AB6114C00B9B5DD /* blacksquare.png in Resources */,
+				9686C1521AB6114C00B9B5DD /* whitebishop.png in Resources */,
+				9686C1531AB6114C00B9B5DD /* whiteking.png in Resources */,
+				9686C1541AB6114C00B9B5DD /* whiteknight.png in Resources */,
+				9686C1551AB6114C00B9B5DD /* whitepawn.png in Resources */,
+				9686C1561AB6114C00B9B5DD /* whitequeen.png in Resources */,
+				9686C1571AB6114C00B9B5DD /* whiterook.png in Resources */,
+				9686C1581AB6114C00B9B5DD /* whitesquare.png in Resources */,
+				968BAEDA1ABE04740019282B /* TODO in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +428,13 @@
 				968C6C7C1AB2A9870071C923 /* Board.mm in Sources */,
 				968567F11AB2B99D00656AF7 /* Rook.mm in Sources */,
 				968567F41AB2C0A600656AF7 /* Bishop.mm in Sources */,
+				9684302D1AB38CC500542F2B /* Queen.mm in Sources */,
+				96BC4E501AB3ACB90082C581 /* Knight.mm in Sources */,
+				9686F54B1AB3E37F00467730 /* King.mm in Sources */,
+				9686F5501AB3E7C100467730 /* Pawn.mm in Sources */,
+				969EAA971AB4BC8700740286 /* MoveSensitivePiece.mm in Sources */,
+				96889AE61AB7C0D500455C41 /* DrawableImageView.mm in Sources */,
+				969BDF5A1ABA8A0D0021C6BC /* UIImage+UIImageTint.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,7 +546,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Chess/Chess-Prefix.pch";
 				INFOPLIST_FILE = "Chess/Chess-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -437,7 +559,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Chess/Chess-Prefix.pch";
 				INFOPLIST_FILE = "Chess/Chess-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
