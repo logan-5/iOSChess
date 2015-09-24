@@ -19,7 +19,7 @@ public:
     enum movetype_e { NORMAL, CASTLE };
     King( Board* board, color_e color, Square* currentSquare, Game& game, std::initializer_list<Rook*> rooks ) : MoveSensitivePiece( board, color, currentSquare, color == color_e::BLACK ? "blackking.png" : "whiteking.png" ), _game( &game ), _rooks( rooks ) {}
     ~King() {}
-    squarelist_t getMoveOptions( bool testMove = false ) const;
+    squarelist_t getMoveOptions( bool testMove = false ) const override;
     movetype_e lastMoveType() { return _lastMove; }
     bool moveToSquareIfPossible( Square& s ) override;
     

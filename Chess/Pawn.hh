@@ -16,7 +16,7 @@ public:
     Pawn( Board* board, color_e color, Square* currentSquare ) : MoveSensitivePiece( board, color, currentSquare, color == color_e::BLACK ? "blackpawn.png" : "whitepawn.png" ), _movedOnce( false ) {}
     ~Pawn() {}
     bool movedOnce() { return _movedOnce; }
-    squarelist_t getMoveOptions( bool testMove = false ) const;
+    squarelist_t getMoveOptions( bool testMove = false ) const override;
     bool moveToSquareIfPossible( Square& s ) override;
     void update() { if( _movedOnce ) { _movedOnce = false; } }
     
